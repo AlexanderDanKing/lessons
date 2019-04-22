@@ -10,41 +10,44 @@ let money = +prompt("Ваш бюджет на месяц?"),
     savings: false
 };
 
-// for (let i = 0; i < 2; i++){
-//     var a = prompt("Введите обязательную статью расходов в этом месяце"),
-//         b = prompt("Во сколько обойдется");
+for (let i = 0; i < 2; i++){
+    var a = prompt("Введите обязательную статью расходов в этом месяце"),
+        b = prompt("Во сколько обойдется");
 
-//     if ( (typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null
-//     && a != "" && b != "" && a.length < 50) {
-//         console.log("done");
-//         appData.expenses[a] = b;
-//     } else {
-//         i--;
-//     }
-// };
+    if ((typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null
+    && a != "" && b != "" && a.length < 50) {
+        console.log("done");
+        appData.expenses[a] = b;
+    } else {
+        i--;
+    }
+};
 
 // let i = 0;
 // while ( i < 2 ) {
 //     var a = prompt("Введите обязательную статью расходов в этом месяце"),
 //     b = prompt("Во сколько обойдется");
-//        if ( (typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null
-//         && a != "" && b != "" && a.length < 50);
+//        if ((typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null
+//         && a != "" && b != "" && a.length < 50) {
 //     appData.expenses[a] = b;
 //     i++;
+    //  };
 // };
 // console.log("done");
 
-let i = 0;
-do {
-    var a = prompt("Введите обязательную статью расходов в этом месяце"),
-    b = prompt("Во сколько обойдется");
-    if ( (typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null
-  && a != "" && b != "" && a.length < 50);
-    appData.expenses[a] = b;
-    i++; 
-}
-while ( i < 2 );
-console.log("done");
+// let i = 0;
+// do {
+//     var a = prompt("Введите обязательную статью расходов в этом месяце"),
+//     b = prompt("Во сколько обойдется");
+//     if  ((typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null
+//   && a != "" && b != "" && a.length < 50) {
+//     console.log("done");
+//     appData.expenses[a] = b;
+//     i++; 
+//   };
+// }
+// while ( i < 2 );
+
 
 
 appData.moneyPerDay = (appData.budget - b) / 30;
