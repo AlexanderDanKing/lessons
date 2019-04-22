@@ -19,7 +19,7 @@ let money = +prompt("Ваш бюджет на месяц?"),
 //         console.log("done");
 //         appData.expenses[a] = b;
 //     } else {
-//         console.log("error");
+//         i--;
 //     }
 // };
 
@@ -27,6 +27,8 @@ let money = +prompt("Ваш бюджет на месяц?"),
 // while ( i < 2 ) {
 //     var a = prompt("Введите обязательную статью расходов в этом месяце"),
 //     b = prompt("Во сколько обойдется");
+//        if ( (typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null
+//         && a != "" && b != "" && a.length < 50);
 //     appData.expenses[a] = b;
 //     i++;
 // };
@@ -36,6 +38,8 @@ let i = 0;
 do {
     var a = prompt("Введите обязательную статью расходов в этом месяце"),
     b = prompt("Во сколько обойдется");
+    if ( (typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null
+  && a != "" && b != "" && a.length < 50);
     appData.expenses[a] = b;
     i++; 
 }
